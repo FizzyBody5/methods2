@@ -16,7 +16,13 @@
 
 
 # TODO - write elevenish?
-	
+    def write_elevenish(n)
+        if n % 11 == 0 || n % 11 == 1
+            return true
+        else
+            return false
+        end
+    end
 # TODO - write ice_cream_party?
 
 # TODO - write successful_squirrel_party?
