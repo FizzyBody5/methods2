@@ -40,4 +40,22 @@ describe 'Methods2' do
     end
   end
 
+  describe 'successful_squirrel_party?' do
+    it 'nuts are between 40 and 60 and not weekend' do
+      successful_squirrel_party?(40, false).must_equal(true)
+    end
+
+    it 'nuts are less than 40 and not weekend' do
+      successful_squirrel_party?(30,false).must_equal(false)
+    end
+
+    it 'nuts are more than 60 and not weekend' do
+      successful_squirrel_party?(70, false).must_equal(false)
+    end
+
+    it 'nuts are more than 60 and weekend' do
+      successful_squirrel_party?(70, true).must_equal(true)
+    end
+  end
+
 end
