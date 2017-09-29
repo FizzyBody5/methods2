@@ -45,7 +45,15 @@
         end
     end
 # TODO - write ticket
-
+    def ticket(a, b, c)
+        if a + b == 10 || b +  c == 10 || a + c == 10
+            return 10
+        elsif (a + b) - (b + c) == 10 || a + b - a + c == 10
+            return 5
+        else
+            return 0
+        end
+     end
 # TODO - write in_order?
 
 # TODO - write less_by_ten?

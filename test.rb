@@ -58,4 +58,18 @@ describe 'Methods2' do
     end
   end
 
+  describe 'ticket' do
+    it 'one pair adds up to 10' do
+      ticket(5,5,5).must_equal(10)
+    end
+
+    it 'one pair has 10 more than sum of other pair' do
+      ticket(20, 20, 10).must_equal(5)
+    end
+    
+    it 'none add to 10' do
+      ticket(2,2,2).must_equal(0)
+    end
+  end
+
 end
