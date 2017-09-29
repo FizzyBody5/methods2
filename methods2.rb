@@ -65,7 +65,7 @@
         end
     end
 # TODO - write less_by_ten?
-
+    def less_by_ten?(a)
 # TODO - write fizz_string
 
 # TODO - write first_last_six?
