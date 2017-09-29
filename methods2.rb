@@ -55,7 +55,15 @@
         end
      end
 # TODO - write in_order?
-
+    def in_order?(a, b, c, bOK)
+        if b > a && c > b && !bOK
+            return true
+        elsif b < a && c > b && bOK || b > a && c > b && bOK
+            return true
+        else
+            return false
+        end
+    end
 # TODO - write less_by_ten?
 
 # TODO - write fizz_string

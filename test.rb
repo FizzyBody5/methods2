@@ -72,4 +72,22 @@ describe 'Methods2' do
     end
   end
 
+  describe 'in_order?' do
+    it 'b is greater than a, and c and bOK is false' do
+      in_order?(1, 2, 3, false).must_equal(true)
+    end
+    
+    it 'b is greater than a, and c and bOK is true' do
+      in_order?(1, 2, 3, true).must_equal(true)
+    end
+
+    it 'b is not greater than a, and c and bOK is true' do
+      in_order?(2,1,3, true).must_equal(true)
+    end
+
+    it 'a is greater than b and c is less than b, and bOK is false' do
+      in_order?(5,4,3, false).must_equal(false)
+    end
+  end
+
 end
