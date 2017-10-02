@@ -96,5 +96,7 @@
     end
 
 # TODO - write rotate_left
-
+    def rotate_left(trio)
+        return [trio[1], trio[2], trio[0]]
+    end
 # TODO - write double23?
