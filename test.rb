@@ -100,4 +100,21 @@ describe 'Methods2' do
     end
   end
 
+  describe 'fizz_string' do
+    it 'str starts with f' do
+      fizz_string("Friends").must_equal("Fizz")
+    end
+
+    it 'str end with b' do
+      fizz_string("bob").must_equal("Buzz")
+    end
+
+    it 'str starts with f and ends with b' do
+      fizz_string("Fib").must_equal("FizzBuzz")
+    end
+
+    it 'str doesnt have either' do
+      fizz_string("Pizza").must_equal("Pizza")
+    end
+  end
 end
