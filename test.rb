@@ -141,4 +141,18 @@ describe 'Methods2' do
       rotate_left([1, 2, 3]).must_equal([2, 3, 1])
     end
   end
+
+  describe 'double23?' do
+    it "arr has two 2's" do
+      double23?([2, 2]).must_equal(true)
+    end
+
+    it "arr has two 3's" do
+      double23?([3, 3]).must_equal(true)
+    end
+
+    it "arr has nothing" do
+      double23?([]).must_equal(false)
+    end
+  end
 end

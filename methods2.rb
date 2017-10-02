@@ -100,3 +100,10 @@
         return [trio[1], trio[2], trio[0]]
     end
 # TODO - write double23?
+def double23?(arr)
+    if arr[0] == 2 && arr[1] == 2 || arr[0] == 3 && arr[1] == 3
+        return true
+    else
+        return false
+    end
+end
