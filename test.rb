@@ -90,13 +90,13 @@ describe 'Methods2' do
     end
   end
 
-  describe 'less_by_10?' do
+  describe 'less_by_ten?' do
     it 'a is 10 less than b, or c' do
-      less_by_10?(10, 20, 30).must_equal(true)
+      less_by_ten?(10, 20, 30).must_equal(true)
     end
 
     it 'a is not less than b, or c' do
-      less_by_10?(10,19,18).must_equal(false)
+      less_by_ten?(10,19,18).must_equal(false)
     end
   end
 
