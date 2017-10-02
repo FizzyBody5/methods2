@@ -117,4 +117,22 @@ describe 'Methods2' do
       fizz_string("Pizza").must_equal("Pizza")
     end
   end
+
+  describe 'first_last_six?' do
+    it 'six in begining and end' do
+      first_last_six?([6, 1, 4, 6]).must_equal(true)
+    end
+
+    it 'six in the begining' do
+      first_last_six?([6, 1, 4, 1]).must_equal(true)
+    end
+
+    it "six in the end" do
+      first_last_six?([1, 1 ,4, 6]).must_equal(true)
+    end
+
+    it 'doesnt have 6' do
+      first_last_six?([1, 2, 3, 4, 5]).must_equal(false)
+    end
+  end
 end
